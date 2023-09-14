@@ -91,6 +91,7 @@ timeline-a .timeline > div.year h4.mobile_h4{
         padding: 0;
         position: absolute;
         left: 0;
+        transform: translateY(1.5px);
     }
 }
 timeline-a .timeline > div.anchor svg:first-child{
