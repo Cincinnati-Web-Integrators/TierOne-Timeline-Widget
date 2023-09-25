@@ -110,7 +110,7 @@ function create_timeline(data){
 
                 let year_h4_mobile = document.createElement("h4");
                 year_h4_mobile.classList.add("mobile_h4");
-                year_h4_mobile.innerHTML = "'" + (`${data_item.CONTENT - 2000}`).padStart(2, '0');
+                year_h4_mobile.innerHTML = "&lsquo;" + (`${data_item.CONTENT - 2000}`).padStart(2, '0');
 
                 div.appendChild(year_h4_mobile);
                 break;

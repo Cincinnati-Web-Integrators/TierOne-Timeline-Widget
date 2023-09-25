@@ -215,21 +215,21 @@ timeline-a .div_two .content_div{
 timeline-a .div_two h3{
     color: #2E235B;
     font-family: Syncopate;
-    font-size: 44px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
     padding: 45px 0 30px;
 }
-@media(max-width: 1200px){
+@media(max-width: 1000px){
     timeline-a .div_two h3{
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 @media(max-width: 768px){
     timeline-a .div_two h3{
-        font-size: 21px;
+        font-size: 20px;
     }
 }
 
