@@ -207,21 +207,21 @@ function create_timeline(data){
     let prev_snap_point_button = document.createElement("button");
     prev_snap_point_button.classList.add("prev_btn");
     prev_snap_point_button.innerHTML = `
-    <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.999853 23.5C0.999852 11.1137 11.4944 1.00002 24.5314 1.00002C37.5685 1.00002 48.063 11.1137 48.063 23.5C48.063 35.8864 37.5685 46 24.5314 46C11.4944 46 0.999854 35.8864 0.999853 23.5Z" fill="white" stroke="#30235F" stroke-width="2"/>
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="23" fill="none" stroke="#30225E" stroke-width="2"></circle>
         <path d="M14.0051 27.587L24.8096 15.7655L35.6035 27.587" stroke="#30225E" stroke-width="2" stroke-miterlimit="10"/>
     </svg>
     `;
 
     let next_snap_point_button = document.createElement("button");
     next_snap_point_button.classList.add("next_btn");
+
     next_snap_point_button.innerHTML = `
-    <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.999853 23.5C0.999852 11.1137 11.4944 1.00002 24.5314 1.00002C37.5685 1.00002 48.063 11.1137 48.063 23.5C48.063 35.8864 37.5685 46 24.5314 46C11.4944 46 0.999854 35.8864 0.999853 23.5Z" fill="white" stroke="#30235F" stroke-width="2"/>
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="23" fill="none" stroke="#30225E" stroke-width="2"></circle>
         <path d="M14.0051 27.587L24.8096 15.7655L35.6035 27.587" stroke="#30225E" stroke-width="2" stroke-miterlimit="10"/>
     </svg>
     `;
-    next_snap_point_button.style.transform = "rotate(180deg)";
 
     snap_buttons_div.appendChild(prev_snap_point_button);
     snap_buttons_div.appendChild(next_snap_point_button);

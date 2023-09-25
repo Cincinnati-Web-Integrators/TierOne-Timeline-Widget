@@ -1,7 +1,7 @@
 timeline-a{
     display: flex;
     overflow: hidden;
-    max-height: min(90vh, 775px);
+    max-height: min(calc(90vh - 75px), 650px);
     column-gap: 40px;
     justify-content: center;
     max-width: 1800px;
@@ -47,7 +47,7 @@ timeline-a .timeline > div svg{
 }
 @media(max-width: 550px){
     timeline-a .timeline > div svg circle{
-        r: 30px;
+        r: 24px;
     }
 }
 timeline-a .timeline > div.year{
@@ -55,12 +55,13 @@ timeline-a .timeline > div.year{
 }
 timeline-a .timeline > div.year h4{
     color: #2E235B;
-    font-family: Syncopate;
+    font-family: "Noto Sans";
     font-size: 31px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-left: 23px;
+    margin:0;
 }
 @media(max-width: 1200px){
     timeline-a .timeline > div.year  h4{
@@ -98,7 +99,6 @@ timeline-a .timeline > div.anchor svg:first-child{
     z-index: 2;
 }
 timeline-a .timeline > div.anchor svg circle{
-    cursor: pointer;
     transition: r 100ms ease-in-out;
 }
 timeline-a .timeline > div.anchor svg circle:hover{
@@ -287,14 +287,14 @@ timeline-a .div_two .buttons_div{
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    padding: 0 5px;
+    padding: 0 5px 5px 0;
+    margin: -5px 0 0 -5px;
 }
 @media(max-width: 1200px){
     timeline-a .div_two .buttons_div{
         display: flex;
         flex-direction: column;
         row-gap: 5px;
-        padding: 0 15px 0 0;
     }
 }
 @media(max-width: 768px){
@@ -303,7 +303,6 @@ timeline-a .div_two .buttons_div{
         align-items: flex-end;
         background: white;
         z-index: 1;
-        padding: 0;
     }
 }
 timeline-a .div_two .buttons_div button{
@@ -314,24 +313,32 @@ timeline-a .div_two .buttons_div button{
     padding: 0;
     margin: 0;
 }
-timeline-a .div_two .buttons_div button:hover{
-    cursor: pointer;
+
+timeline-a .next_btn,
+timeline-a .prev_btn{
+    transition:transform 100ms;
 }
-timeline-a.start .div_two button.prev_btn{
-    filter: opacity(0.5) saturate(0.5);
+
+timeline-a .next_btn{
+    transform:rotate(180deg);
 }
-timeline-a.start .div_two button.prev_btn:hover{
-    cursor: default;
+
+timeline-a:not(.end) .next_btn,
+timeline-a:not(.start) .prev_btn{
+    cursor:pointer;
 }
+timeline-a.start .div_two button.prev_btn,
 timeline-a.end .div_two button.next_btn{
     filter: opacity(0.5) saturate(0.5);
 }
-timeline-a.end .div_two button.next_btn:hover{
-    cursor: default;
-}
-@media(max-width: 1200px){
-    timeline-a .div_two .next_btn{
 
+@media(min-width:767px){
+    timeline-a:not(.end) .next_btn:hover{
+        transform:rotate(180deg) scale(1.2);
+    }
+
+    timeline-a:not(.start) .prev_btn:hover{
+        transform: scale(1.2);
     }
 }
 
