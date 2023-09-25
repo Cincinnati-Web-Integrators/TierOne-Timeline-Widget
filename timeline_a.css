@@ -288,17 +288,11 @@ timeline-a .div_two img{
 timeline-a .div_two .buttons_div{
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 15px;
     padding: 0 5px 5px 0;
     margin: -5px 0 0 -5px;
 }
-@media(max-width: 1200px){
-    timeline-a .div_two .buttons_div{
-        display: flex;
-        flex-direction: column;
-        row-gap: 5px;
-    }
-}
+
 @media(max-width: 768px){
     timeline-a .div_two .buttons_div{
         width: 100%;
