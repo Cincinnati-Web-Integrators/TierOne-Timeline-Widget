@@ -289,8 +289,8 @@ timeline-a .div_two .buttons_div{
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    padding: 0 5px 5px 0;
-    margin: -5px 0 0 -5px;
+    padding: 0 10px 10px 0;
+    margin: -10px 0 0 -10px;
 }
 
 @media(max-width: 768px){
