@@ -240,7 +240,9 @@ timeline-a .div_two h4{
     font-style: normal;
     font-weight: 700;
     line-height: 122.7%;
+    white-space: pre-wrap;
 }
+
 @media(max-width: 1200px){
     timeline-a .div_two h4{
         font-size: 25px;
@@ -260,7 +262,7 @@ timeline-a .div_two p{
     font-weight: 400;
     line-height: normal;
     padding: 5px 0 30px;
-    white-space: pre-line;
+    white-space: pre-wrap;
 }
 @media(max-width: 1200px){
     timeline-a .div_two p{
